@@ -79,6 +79,7 @@ const D = {"cats": {"club": ["Клубы — танцпол до утра", "#FF
 const CATS = D.cats, MARKERS = D.markers;
 
 const map = L.map('map',{zoomControl:true,attributionControl:true}).setView([68.965,33.082],12);
+map.attributionControl.setPrefix('');
 L.control.zoom({position:'bottomright'});
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
   attribution:'&copy; OpenStreetMap, &copy; CARTO',maxZoom:19,subdomains:'abcd'}).addTo(map);
